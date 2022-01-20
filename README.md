@@ -1,6 +1,6 @@
 # Razorbotz Git Intro
 
-Welcome to the Razorbotz Project.  This page is intended to serve as an introduction to Github for new users.  If you encounter any links that are outdated or any commands that don't work, please contact me at andrewburroughs17@gmail.com.  
+Welcome to the Razorbotz Project.  This page is intended to serve as an introduction to Github for new users.  If you encounter any links that are outdated or any commands that don't work, please contact me at andrewburroughs17@gmail.com.  **For the instructions below, the expected output is shown after the commands.**
 
 ## Introduction
 
@@ -33,7 +33,7 @@ git pull origin master
 ```
 
 
-This will download and merge the changes from the master branch in the origin remote repository.  Because you downloaded the most recent version of the repository, there will most likely be nothing to update, so the command will return the response 
+This will download and merge the changes from the master branch in the origin remote repository.  Because you downloaded the most recent version of the repository, there will most likely be nothing to update, so the command will return the response.
 
 
 ![Pull results](https://github.com/Razorbotz/Test/blob/pictures/pictures/Test_1.PNG)
@@ -49,7 +49,7 @@ git branch
 ![Branch results](https://github.com/Razorbotz/Test/blob/pictures/pictures/Test_4.PNG)
 
 
-After running the command, the output is the branches that are in the repository.  The default branch for the Test repository is the master branch.  The master branch is push protected, so you will not be able to modify any of the files in it without approval.  To modify files without overwriting anyone else's work or atttempting to push to the master branch, you will create a new local branch.  To create a local branch, run the following command and replace yourName with your name.
+After running the command, the branches currently in the repository are listed.  The default branch for the Test repository is the master branch.  The branch that is currently selected is displayed in green, which is currently the master branch.  The master branch is push protected, so you will not be able to modify any of the files in it without approval.  You will need to create a local branch to avoid (1) modifying someone else's work and (2) attempting to push to the master branch.  To create a local branch, run the following command and replace yourName with your name.
 
 ```
 git branch yourName
@@ -85,7 +85,13 @@ To specify files to add to the repository, specify the locations of the files af
 git add \path\to\modified\file1 \path\to\modified\file2
 ```
 
-TODO: git status
+To view which files have been added to the repository, run the git status command.
+
+```
+git status
+```
+
+![Branch results](https://github.com/Razorbotz/Test/blob/pictures/pictures/Test_13.PNG)
 
 After adding the files to the repository, the files must be committed to the repository.  The -m flag allows the user to create a commit message that describes the changes that are being included in the commit.  
 
@@ -112,6 +118,8 @@ git push -u origin yourName
 
 
 After pushing the changes to the repository, it will be a commit ahead of the master branch.  To move the changes to the master branch, initiate a pull request for your branch to the master.  To initiate a pull request, go to the [Razorbotz/Test](https://github.com/Razorbotz/Test.git) repository on Github.  Click on the master branch and select your branch from the dropdown menu.  
+
+![Branch select](https://github.com/Razorbotz/Test/blob/pictures/pictures/Test_12.PNG)
 
 After navigating to your branch, press the Compare & pull request button.  
 
